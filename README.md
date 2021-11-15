@@ -11,9 +11,19 @@ This Community Connector uses endpoint of [Trino REST API].
 To use this Community Connector in Data Studio there is a one-time setup to
 deploy your own personal instance of the connector using Apps Script.
 
-### Deploy the connector
+## Deploy the connector
 
-Follow the [deployment guide] to deploy the Community Connector.
+1.  Visit [Google Apps Script](https://script.google.com/) and create a new
+    project.
+1.  In the Apps Script development environment, select **View > Show manifest
+    file**. Replace the contents of this file with the content of the
+    `src/appsscript.json` file from the repository.
+1.  For every `.js` file under `src`, you will need to create a file in Apps
+    Scripts (**File > New > Script File**), then copy over the content from the
+    repository.
+1.  To use the Community Connector in Data Studio, follow the
+    [guide on Community Connector Developer site](https://developers.google.com/datastudio/connector/use).
+
 
 ## Using the connector in Data Studio
 
@@ -28,9 +38,7 @@ when [creating a new data source].
 [Community Connector]: https://developers.google.com/datastudio/connector
 [Trino]: https://trino.io/
 [Trino REST API]: https://trino.io/docs/current/develop/client-protocol.html
-[deployment guide]: ../deploy.md
 [Use a Community Connector]: https://developers.google.com/datastudio/connector/use
 [revoke access]: https://support.google.com/datastudio/answer/9053467
 [connector list]: https://datastudio.google.com/c/datasources/create
 [creating a new data source]: https://support.google.com/datastudio/answer/6300774
-[This app isn't verified]: ../verification.md
