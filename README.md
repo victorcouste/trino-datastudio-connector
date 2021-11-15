@@ -4,14 +4,14 @@
 
 This [Data Studio] [Community Connector] lets users query the [Trino] SQL engine catalogs.
 
-This Community Connector uses endpoint of [Trino REST API].
+This Community Connector uses the [Trino REST API].
 
 ## Set up the Community Connector for personal use
 
 To use this Community Connector in Data Studio there is a one-time setup to
 deploy your own personal instance of the connector using Apps Script.
 
-## Deploy the connector
+### Deploy the connector
 
 1.  Visit [Google Apps Script](https://script.google.com/) and create a new
     project.
@@ -34,6 +34,31 @@ Once you've set up and deployed the connector, follow the
 [revoke access], it will remain listed in the [connector list] for easy access
 when [creating a new data source].
 
+### Trino connector configuration
+
+The following configuration parameters are available:
+
+- **`Trino Server URL`** (required)
+Your Trino server URL (http or https) e.g. http://my_trino_server:8080 or https://my_trino_server.
+
+- **`Trino User`**  (required)
+Your Trino user name.
+
+- **`Trino Password`** (Optional)
+Trino user password. You need it if your Trino [Authentication Type] is set to PASSWORD. Let it blank if no password is required to connect.
+ 
+- **`Trino Catalog`** (required)
+Trino [Catalog] you want to connect.
+
+- **`Trino Schema`** (required)
+Trino [Schema] you want to connect.
+  
+- **`Trino Table or View`** (required)
+Trino [Table or View] you want to connect.
+
+ - **`Row Limit`**  (Optional, default=10000)
+Set this limit if you want to limit the number of rows retrieved in Data Studio.
+
 [Data Studio]: https://datastudio.google.com
 [Community Connector]: https://developers.google.com/datastudio/connector
 [Trino]: https://trino.io/
@@ -42,3 +67,7 @@ when [creating a new data source].
 [revoke access]: https://support.google.com/datastudio/answer/9053467
 [connector list]: https://datastudio.google.com/c/datasources/create
 [creating a new data source]: https://support.google.com/datastudio/answer/6300774
+[Table or View]: https://trino.io/docs/current/overview/concepts.html#table
+[Schema]: https://trino.io/docs/current/overview/concepts.html#schema
+[Catalog]: https://trino.io/docs/current/overview/concepts.html#catalog
+[Authentication Type]: https://trino.io/docs/current/security/authentication-types.html
