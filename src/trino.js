@@ -99,9 +99,6 @@ function getTrinoColumns(url,headers,catalog,schema,object) {
 
   }
 
-  data = JSON.parse(response_json).data;
-  if (data != null) columns=columns.concat(data);
-
   //Logger.log(columns);
 
   return columns;
@@ -221,9 +218,6 @@ function runTrinoQuery(url,headers,query) {
     if (datai != null) data=data.concat(datai);
 
   }
-
-  datai = JSON.parse(response_json).data;
-  if (datai != null) data=data.concat(datai);
   
   return data;
 }
