@@ -9,7 +9,7 @@
  * @return {string} The generated query string
  */
 function generateTrinoQuery(request) {
-  const defaultRowLimit = 1000;
+  const defaultRowLimit = 10000;
   var params = request.configParams || {};
 
   var rowLimit = parseInt(params.rowLimit || defaultRowLimit);

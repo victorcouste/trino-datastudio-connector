@@ -5,8 +5,8 @@
     "company": "Trino user",
     "companyUrl": "https://trino.io",
     "addonUrl": "https://github.com/victorcouste/trino-datastudio-connector",
-    "supportUrl": "https://github.com/victorcouste/trino-datastudio-connector",
-    "description": "Query Trino catalogs"
+    "supportUrl": "https://github.com/victorcouste/trino-datastudio-connector/issues/new?title=Trino%20Connector%20Issue",
+    "description": "Query Trino catalogs, schemas, tables and views"
   },
   "runtimeVersion": "V8"
 }
