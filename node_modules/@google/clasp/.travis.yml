@@ -1,0 +1,27 @@
+sudo: enabled
+os:
+- linux
+# - osx
+language: node_js
+node_js:
+- node
+- '10'
+- '8'
+env:
+  global:
+  - SCRIPT_ID=1EwE84eZCSBPcaAiJzCnDjmxMVnLQrDyhSKq1oZY6q-3x4BIDHgQefCnL
+  - PROJECT_ID=project-id-3961473932623644264
+cache:
+  directories:
+  - "$HOME/.npm"
+before_install:
+- npm install -g npm@latest
+install:
+- npm ci
+before_script:
+- npm run build
+- echo -ne $CREDS | sed 's@\\@@g' > $HOME/.clasprc.json
+script:
+- npm run lint
+- npm run test
+after_success: npm run coverage

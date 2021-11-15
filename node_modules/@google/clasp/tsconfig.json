@@ -1,0 +1,20 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "es5",
+    "lib": [
+      "es2015",
+      "es5",
+      "es6",
+      "es2017"
+    ],
+    "strict": true,
+    "inlineSourceMap": true,
+  },
+  "moduleResolution": "node",
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts"
+  ]
+}
