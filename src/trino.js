@@ -102,7 +102,7 @@ function getTrinoColumns(url,headers,catalog,schema,object) {
   data = JSON.parse(response_json).data;
   if (data != null) columns=columns.concat(data);
 
-  Logger.log(columns);
+  //Logger.log(columns);
 
   return columns;
 }
@@ -251,7 +251,7 @@ function runTrinoQuery(url,headers,query) {
 
   var query = generateTrinoQuery(request);
 
-  Logger.log(query);
+  //Logger.log(query);
 
   var queryResults = runTrinoQuery(params.trino_url,headers,query);
   
@@ -261,8 +261,8 @@ function runTrinoQuery(url,headers,query) {
     return {values: row};
   });
 
-  Logger.log(schema);
-  Logger.log(rows);
+  //Logger.log(schema);
+  //Logger.log(rows);
 
   return {
     schema: schema,

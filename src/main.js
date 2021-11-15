@@ -9,11 +9,10 @@
  * an admin user of the connector.
  */
 function isAdminUser() {
-  return true;
+  return false;
 }
 
 function logObject(object) { cc.newDebugError() .setText(JSON.stringify(object)) .throwException(); }
-
 
 // https://developers.google.com/datastudio/connector/reference#getconfig
 /**
