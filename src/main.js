@@ -68,7 +68,7 @@ function getConfig(request) {
     .setId('rowLimit')
     .setName('Row Limit')
     .setHelpText('Maximum number of rows to fetch in each query. Default is 1000. If set to -1, all rows will be fetched.')
-    .setPlaceholder('1000');
+    .setPlaceholder('10000');
 
   return config.build();
 }
