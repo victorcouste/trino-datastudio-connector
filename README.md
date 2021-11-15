@@ -1,6 +1,6 @@
 # Trino Community Connector for Data Studio
 
-![Trino for Data Studio](https://github.com/victorcouste/trino-datastudio-connector/blob/main/trino_datastudio.png?raw=true&s=200)
+<img src="https://github.com/victorcouste/trino-datastudio-connector/blob/main/trino_datastudio.png?raw=true" alt="Trino for Data Studio" width="50%" height="50%">
 
 *This is not an official Google product*
 
