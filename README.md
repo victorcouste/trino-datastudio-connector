@@ -4,7 +4,7 @@
 
 *This is not an official Google product*
 
-This [Google Data Studio] [Community Connector] lets users query the [Trino] SQL engine catalogs.
+This [Google Data Studio] [Community Connector] lets users query the [Trino] SQL engine catalogs, schemas, tables and views.
 
 This Community Connector uses the [Trino REST API].
 
