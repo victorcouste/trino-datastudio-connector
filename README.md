@@ -59,6 +59,8 @@ Trino [Table or View] you want to connect.
  - **`Row Limit`**  (Optional, default=10000)
 Set this limit if you want to limit the number of rows retrieved in Data Studio.
 
+![Trino connector parameters](https://github.com/victorcouste/trino-datastudio-connector/blob/main/trino_connector_parameters.png?raw=true)
+
 [Data Studio]: https://datastudio.google.com
 [Community Connector]: https://developers.google.com/datastudio/connector
 [Trino]: https://trino.io/
