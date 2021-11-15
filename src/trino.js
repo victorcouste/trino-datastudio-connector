@@ -114,7 +114,7 @@ function getTrinoColumns(url,headers,catalog,schema,object) {
  * @param  {Object} request Data/Schema request parameters.
  * @return {Object} Data Studio Fields object.
  */
- function getFieldsFromTrino(request) {
+function getFieldsFromTrino(request) {
 
   var fields = cc.getFields();
   var types = cc.FieldType;
@@ -235,7 +235,7 @@ function runTrinoQuery(url,headers,query) {
  * @param  {Object} request Data request parameters.
  * @return {Object} Contains the schema and data for the given request.
  */
- function getDataFromTrino(request) {
+function getDataFromTrino(request) {
   var requestedFieldIds = request.fields.map(function(field) {
     return field.name;
   });
