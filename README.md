@@ -82,5 +82,4 @@ Set this limit if you want to limit the number of rows retrieved in Data Studio.
 [Schema]: https://trino.io/docs/current/overview/concepts.html#schema
 [Catalog]: https://trino.io/docs/current/overview/concepts.html#catalog
 [Authentication Type]: https://trino.io/docs/current/security/authentication-types.html
-[Direct Link]: https://datastudio.google.com/datasources/create?connectorId=
-AKfycbyfQ2T-c1badhAjPbcr5qzZ4n55fVXyEPxXlCkSID-P0EIGAhtS6EB6kljypEcYsslkKg
+[Direct Link]: https://datastudio.google.com/datasources/create?connectorId=AKfycbyfQ2T-c1badhAjPbcr5qzZ4n55fVXyEPxXlCkSID-P0EIGAhtS6EB6kljypEcYsslkKg
