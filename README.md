@@ -8,7 +8,7 @@ This [Google Data Studio] [Community Connector] lets users query the [Trino] SQL
 
 This Community Connector uses the [Trino REST API].
 
-To install and use this Community Connector in Data Studio you can use this [Direct Link] or follow below steps to do your own deployment.
+To install and use this Trino connector in Data Studio you can just use this [Direct Link] or follow below steps to do your own deployment.
 
 ## Set up the Community Connector for personal use
 
