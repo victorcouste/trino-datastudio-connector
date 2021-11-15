@@ -8,6 +8,8 @@ This [Google Data Studio] [Community Connector] lets users query the [Trino] SQL
 
 This Community Connector uses the [Trino REST API].
 
+To install and use this Community Connector in Data Studio you can use this [Direct Link] or follow below steps to do your own deployment.
+
 ## Set up the Community Connector for personal use
 
 To use this Community Connector in Data Studio there is a one-time setup to
@@ -63,6 +65,11 @@ Set this limit if you want to limit the number of rows retrieved in Data Studio.
 
 ![Trino connector parameters](https://github.com/victorcouste/trino-datastudio-connector/blob/main/trino_connector_parameters.png?raw=true)
 
+![Trino connector fields](https://github.com/victorcouste/trino-datastudio-connector/blob/main/trino_connectorfields.png?raw=true)
+
+![Dataset explorer](https://github.com/victorcouste/trino-datastudio-connector/blob/main/dataset_explorer.png?raw=true)
+
+
 [Google Data Studio]: https://datastudio.google.com
 [Community Connector]: https://developers.google.com/datastudio/connector
 [Trino]: https://trino.io/
@@ -75,3 +82,5 @@ Set this limit if you want to limit the number of rows retrieved in Data Studio.
 [Schema]: https://trino.io/docs/current/overview/concepts.html#schema
 [Catalog]: https://trino.io/docs/current/overview/concepts.html#catalog
 [Authentication Type]: https://trino.io/docs/current/security/authentication-types.html
+[Direct Link]: https://datastudio.google.com/datasources/create?connectorId=
+AKfycbyfQ2T-c1badhAjPbcr5qzZ4n55fVXyEPxXlCkSID-P0EIGAhtS6EB6kljypEcYsslkKg
