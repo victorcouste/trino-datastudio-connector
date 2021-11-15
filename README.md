@@ -1,8 +1,10 @@
 # trino-datastudio-connector
 
+![Trino for Data Studio](https://github.com/victorcouste/trino-datastudio-connector/blob/main/trino_datastudio.png?raw=true)
+
 *This is not an official Google product*
 
-This [Data Studio] [Community Connector] lets users query the [Trino] SQL engine catalogs.
+This [Google Data Studio] [Community Connector] lets users query the [Trino] SQL engine catalogs.
 
 This Community Connector uses the [Trino REST API].
 
