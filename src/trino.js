@@ -47,6 +47,7 @@ function generateTrinoAPIHeaders(user,password) {
     // base64 encoding of trino_user:trino_password
     var credentials = "Basic "+ Utilities.base64Encode(user+':'+password)
     headers = {
+      "X-Trino-Source": "Data Studio Connector",
       "X-Trino-User":user,
       "Authorization": credentials
       };
